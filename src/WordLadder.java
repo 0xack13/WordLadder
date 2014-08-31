@@ -7,7 +7,9 @@ public class WordLadder {
         this.words = new ArrayList<String>();
     }
 
+    //Copy words from "copy" into words
     public WordLadder(WordLadder copy) {
+        //Call the default constructor
         this();
         for (String nextWord: copy.words) {
             this.words.add(nextWord);
